@@ -1,0 +1,117 @@
+body {
+	background-color: #E6EEFF;
+	font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+	position: absolute;
+	bottom: 0px;
+	height: 50px;
+	width: 100%;
+	background-color: black;
+}
+
+
+ul {
+	list-style: none;
+	padding-inline-start: 0px;
+
+}
+
+
+li {
+	list-style-type: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+#monogramas {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.monograma-bigodes {
+	padding: 10px;
+	transition: all .5s cubic-bezier(.47,1.64,.41,.8);
+}
+
+.monograma-bigodes:hover {
+	scale: 1.2;
+}
+
+.svg-bigodes {
+	width: 50px	;
+}
+
+#logo {
+	width: 80%;
+	margin-top: 120px;
+
+}
+
+
+
+
+#content {
+	
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+.contactos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-icons {
+	padding: 0 10px;
+	fill: white;
+}
+
+.social-icons:hover {
+	fill: red;
+}
+
+
+.btn-social {
+	width: 25px;
+}
+
+.linkedin:hover, .facebook:hover, .mail:hover {
+	fill: #FEFFE9;
+}
+
+.instagram:hover, .whatsapp:hover {
+	fill: #EBFFF3;
+}
+
+/*#bigode1 {
+	transition: all .5s cubic-bezier(.47,1.64,.41,.8);
+}
+
+#bigode1:hover {
+	scale: 1.2;
+
+}
+
+*/
