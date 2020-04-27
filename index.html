@@ -19,6 +19,7 @@
 
         <meta property="og:url" content="https://sponsir.pt">
   
+       <link rel="icon" type="image/png" sizes="32x32" href="imgs/favs/bigode1.png" id="favs">  
 
 </head>
 <body>
@@ -141,5 +142,28 @@
 
 
 
+
 </body>
+
+<script type="text/javascript">
+
+
+// alternador de favicon
+
+
+	function iconChange() {
+		setTimeout(function(){ document.getElementById("favs").href = "imgs/favs/bigode2.png";}, 1000);
+		setTimeout(function(){ document.getElementById("favs").href = "imgs/favs/bigode3.png";}, 2000);
+		setTimeout(function(){ document.getElementById("favs").href = "imgs/favs/bigode4.png";}, 3000);
+		setTimeout(function(){ document.getElementById("favs").href = "imgs/favs/bigode1.png";}, 4000);
+	}
+
+	window.onload = function() {
+		
+		setInterval( function() { iconChange();	}, 4000);
+	};
+
+
+
+</script>
 </html>

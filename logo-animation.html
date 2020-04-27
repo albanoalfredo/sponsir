@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title></title>
 
 	<style type="text/css">
@@ -13,7 +14,11 @@
 			transition: all 1s;
 		}
 
+
+
 	</style>
+
+       <link rel="icon" type="image/png" sizes="32x32" href="imgs/favs/bigode1.png" id="favs">  
 
 
 
@@ -39,12 +44,30 @@
 
 	console.log(vh);
 
-	window.addEventListener('mousemove', function (e) {
-		// console.log(` y: ${ e.y } `);
-		if e.y > 900 {
-			logo="bigode1"
-		} else if 
-	});
+	// window.addEventListener('mousemove', function (e) {
+		
+	// 	if e.y > 900 {
+	// 		logo="bigode1"
+	// 	} else if 
+	// });
+
+
+
+
+	// alternador de favicon
+
+
+	function iconChange() {
+		setTimeout(function(){ document.getElementById("favs").href = "imgs/favs/bigode2.png";}, 1000);
+		setTimeout(function(){ document.getElementById("favs").href = "imgs/favs/bigode3.png";}, 2000);
+		setTimeout(function(){ document.getElementById("favs").href = "imgs/favs/bigode4.png";}, 3000);
+		setTimeout(function(){ document.getElementById("favs").href = "imgs/favs/bigode1.png";}, 4000);
+	}
+
+	window.onload = function() {
+		
+		setInterval( function() { iconChange();	}, 4000);
+	};
 
 
 </script>
