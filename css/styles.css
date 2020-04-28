@@ -85,6 +85,10 @@ svg {
   margin: auto;
 }
 
+svg:focus {
+	outline: none;
+}
+
 .contactos {
 	display: flex;
 	justify-content: center;
@@ -97,7 +101,7 @@ svg {
 }
 
 .social-icons:hover {
-	fill: red;
+	/*fill: red;*/
 }
 
 
