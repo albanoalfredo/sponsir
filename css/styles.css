@@ -23,6 +23,11 @@ li {
 	list-style-type: none;
 }
 
+li:focus, section:focus {
+	outline: none;
+}
+
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -33,6 +38,14 @@ li {
 
 .clearfix:after {
   clear: both;
+}
+
+ .disable-select{ 
+ 	user-select:none;
+ }
+
+.cursorPointer {
+	cursor: pointer
 }
 
 
@@ -51,9 +64,6 @@ li {
 	scale: 1.2;
 }
 
-.btn-bigode {
-
-}
 
 
 .svg-bigodes {
@@ -116,6 +126,9 @@ svg:focus {
 .instagram:hover, .whatsapp:hover {
 	fill: #EBFFF3;
 }
+
+
+
 
 /*#bigode1 {
 	transition: all .5s cubic-bezier(.47,1.64,.41,.8);
