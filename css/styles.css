@@ -40,12 +40,17 @@ li:focus, section:focus {
   clear: both;
 }
 
+.no-highlight {
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+
  .disable-select{ 
  	user-select:none;
  }
 
 .cursorPointer {
-	cursor: pointer
+	cursor: pointer;
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
 
 
@@ -108,6 +113,7 @@ svg:focus {
 .social-icons {
 	padding: 0 10px;
 	fill: white;
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
 
 .social-icons:hover {
@@ -118,6 +124,8 @@ svg:focus {
 .btn-social {
 	width: 25px;
 }
+
+
 
 .linkedin:hover, .facebook:hover, .mail:hover {
 	fill: #FEFFE9;
